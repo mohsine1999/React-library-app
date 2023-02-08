@@ -12,7 +12,9 @@ export const ReturnBook = () => {
         />
         <h6 className="mt-2">Book</h6>
         <p>Mosine's Books</p>
-        <a className="btn main-color text-white" href="#">Reserve</a>
+        <a className="btn main-color text-white" href="#">
+          Reserve 
+        </a>
       </div>
     </div>
   );
