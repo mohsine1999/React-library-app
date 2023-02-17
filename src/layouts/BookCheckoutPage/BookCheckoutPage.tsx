@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import BookModel from "../../models/BookModel";
+import ReviewModel from "../../models/ReviewModel";
 import { SprinnerLoading } from "../Utils/SpinnerLoading"; 
 import { StarsReview } from "../Utils/StarsReview";
 import { CheckoutAndReview } from "./CheckoutAndReview";
@@ -12,6 +13,13 @@ export const BookCheckoutPage = () => {
     const [book, setBook] = useState<BookModel>();
     const [isLoading, setIsLoading] = useState(true);
     const [httpError, setHttpError] = useState(null);
+
+    // Review State
+
+    const [reviews, setReviews] = useState<ReviewModel[]>([])
+    const [totalStars, setTotalStars] = useState(0);
+    const [osLoadingReview, setIsReviewLoading] = useState(true);
+    // 2min & 17s
 
     const bookId = (window.location.pathname).split('/')[2];
 
