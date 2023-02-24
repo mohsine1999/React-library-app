@@ -20,7 +20,7 @@ export const BookCheckoutPage = () => {
     const [totalStars, setTotalStars] = useState(0);
     const [osLoadingReview, setIsReviewLoading] = useState(true);
     // 2min & 17s
-
+            // 16
     const bookId = (window.location.pathname).split('/')[2];
 
 
