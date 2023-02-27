@@ -21,6 +21,7 @@ export const BookCheckoutPage = () => {
     const [osLoadingReview, setIsReviewLoading] = useState(true);
     // 2min & 17s
             // 16
+            //17
     const bookId = (window.location.pathname).split('/')[2];
 
 
