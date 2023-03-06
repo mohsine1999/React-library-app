@@ -5,7 +5,7 @@ class ReviewModel {
     rating: number;
     book_id: number;
     reviewDescription?: string;
-//test O22
+//test O222
     constructor(id: number, userEmail: string, date: string, 
         rating: number, book_id: number, reviewDescription: string) {
             
